@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(193, 176, 209);
+        } 
+        header{
+            background-color: white;
+            padding: 5px;
+            margin: 3px;            
+        } 
+        nav{
+            background-color: lightblue;
+            padding: 8px;
+            box-shadow: -1PX -5PX 14PX 0px rgb(124, 226, 93);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+
+        } 
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+        main{
+            background-color: white;
+            padding: 5px;
+            margin: 3px;
+            border-radius: 20px 0px;
+        }                
+        article{
+            background-color: lightblue;
+            padding: 5px;
+        } 
+        article > aside{
+            background-color:rgb(101, 191, 221) ;                     
+        }
+        footer{
+            background-color: black;
+            font-style: italic;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        } 
+        footer>p{
+            margin: 0px;
+        } 
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 30%;
+        }
+        
+    </style>
+</head>
+<body>    
+        <header>
+            <h1>Meu site</h1>
+            <nav>
+                <a href="#">Link></a>
+                <a href="#">Link></a>
+                <a href="#">Link></a>
+                <a href="#">Link></a>
+                <a href="#">Link></a>
+            </nav>            
+        </header>
+        <main>
+            <section id="assuntos">
+                <h2>Acontecendo agora</h2>
+                <p>Esportes, politica e meio ambiente</p>
+
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Noticias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore dolor nemo voluptas incidunt illum sequi nobis dicta suscipit a perferendis illo doloremque, officia harum atque hic cupiditate ratione maxime.</p>
+                    <aside>
+                        <p>Artigo escrito por João Bahia</p>
+                    </aside>
+                </article>
+                <article>
+
+                </article>
+
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido pelo CursoemVideo</p>
+        </footer>
+        <div id="bola"></div>
+</body>
+</html>
