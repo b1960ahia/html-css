@@ -159,6 +159,7 @@ aside > h3{
     
 }
 ul {
+    list-style-position: inside;
     margin-left: 15px;
     columns: 2;
     list-style-type: '\2714\00A0\00A0';
