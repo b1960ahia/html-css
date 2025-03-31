@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de imagens</title>
+    <style>
+        div.quadrado{
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+            background-color:rgba(128, 128, 128, 0.521) ;
+            display: inline-block;
+        }
+        div#q1{
+            background-color: aqua;
+        }
+        div#q2{
+            background-image: linear-gradient(to top, yellow, red);
+        }
+        div#q3{
+            background-image: url('imagens-cap19/pattern001.png');
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
 </body>
 </html>
