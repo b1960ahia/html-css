@@ -78,3 +78,22 @@ ul {
     columns: 1;
     list-style-type: '\2714\00A0\00A0';
 }
+aside{
+    margin-bottom: 10px;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.288);
+}
+aside > h3{
+    background-color: var(--cor5);
+    color: white;
+    padding: 8px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+li{
+    color: wheat;
+    font-size: 1.3em;
+}
+ 
