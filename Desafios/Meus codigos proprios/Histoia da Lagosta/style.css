@@ -8,9 +8,12 @@
     --cor3:#11154d;
     --cor4:#3841C2;
     --cor5:#1C2BEB;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
-body{
+body{    
     background-color: #b6b9dd;
+    font-family: var(--fonte-padrao);
 }
 *{
     padding: 0px;
@@ -18,13 +21,14 @@ body{
 }
 
 header{
-    
+    background-size: 130px;    
     background-position: center;
-    background-repeat:no-repeat;     
+    background-repeat: repeat-x;     
     background-image: url(lagosta\ azul.jpeg);    
     background-color: var(--cor3);
     color: white;
-    padding: 30px;          
+    padding: 40px;
+    padding-bottom: 15px;              
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius:10px;    
@@ -39,11 +43,27 @@ header > p{
     font-weight: bolder;
 }
 main{
-     background-color: var(--cor1);
+    background-color: var(--cor1);    
+    margin: auto;
+    max-width: 600px;
+    min-width: 270pxk;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    margin-bottom: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+main p{
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+    font-size: 1em;
 }
 nav{
     background-color: var(--cor3);
     padding-bottom: 20px;
+    padding-top: 0px;
     
     
 }
@@ -51,4 +71,10 @@ nav > a{
     color: white;
     padding: 5px;
     
+}
+ul {
+    list-style-position: inside;
+    margin-left: 15px;
+    columns: 1;
+    list-style-type: '\2714\00A0\00A0';
 }
