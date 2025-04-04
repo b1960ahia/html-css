@@ -60,20 +60,41 @@ main p{
     line-height: 1.5em;
     font-size: 1em;
 }
-main img{
-    width: 50%;
+article > h1{
+    color: #020752;
+    text-align: center;
+}
+article > h2{
+    color: #020752;
+}
+article > h3{
+    color: #020752;
+}
+article > h4{
+    color: #020752;
+}
+picture > img{
+    
+    width: 100%;
+    max-height: 250px;
+    max-width: 600px;
+    border-radius: 20px;
 }
 nav{
     background-color: var(--cor3);
     padding-bottom: 20px;
     padding-top: 0px;
-    
+    max-width: 100%;    
+    padding-left: 10px;
     
 }
 nav > a{
+    background-color: #414aad;
     color: white;
     padding: 5px;
-    
+    border-radius: 5px;
+    margin: 5px;
+      
 }
 ul {    
     list-style-position: inside;
@@ -94,16 +115,18 @@ aside > h3{
     padding: 8px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
+    font-size: 1em;
     
 }
 aside img{
     width: 60%;
     padding: 20px;
+    border-radius: 0px;
     
 }
 li{
-    color: wheat;
+    color: rgb(2, 12, 41);
     font-size: 1.3em;
-    
+    font-style: oblique;    
 }
  
