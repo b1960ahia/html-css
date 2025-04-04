@@ -1,5 +1,10 @@
 @charset "UTF-8";
-
+@font-face {
+    font-family: 'lagosta';
+    src: url('Redressed.ttf') format('truetype');
+    font-weight: normal;
+    
+}
 
 
 :root{
@@ -10,6 +15,7 @@
     --cor5:#1C2BEB;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-lagosta: 'Redressed', cursive;
 }
 body{    
     background-color: #b6b9dd;
@@ -21,6 +27,7 @@ body{
 }
 
 header{
+    font-family: var(--fonte-lagosta);
     background-size: 130px;    
     background-position: center;
     background-repeat: repeat-x;     
@@ -35,7 +42,7 @@ header{
      
 }
 header > h1{    
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-lagosta);
     font-size: 2em;   
 }
 header > p{
@@ -61,16 +68,20 @@ main p{
     font-size: 1em;
 }
 article > h1{
+    font-family: var(--fonte-lagosta);
     color: #020752;
     text-align: center;
 }
 article > h2{
+    font-family: var(--fonte-lagosta);
     color: #020752;
 }
 article > h3{
+    font-family: var(--fonte-lagosta);
     color: #020752;
 }
 article > h4{
+    font-family: var(--fonte-lagosta);
     color: #020752;
 }
 picture > img{
@@ -89,6 +100,7 @@ nav{
     
 }
 nav > a{
+    font-family: var(--fonte-lagosta);
     background-color: #414aad;
     color: white;
     padding: 5px;
@@ -103,6 +115,7 @@ ul {
     list-style-type: '\2714\00A0\00A0';
 }
 aside{
+    font-family: var(--fonte-lagosta);
     margin-bottom: 10px;
     background-color: var(--cor2);
     padding: 10px;
@@ -110,12 +123,14 @@ aside{
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.288);
 }
 aside > h3{
+    font-family: var(--fonte-lagosta);
     background-color: var(--cor5);
     color: white;
     padding: 8px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
-    font-size: 1em;
+    font-size: 1.3em;
+    text-align: center;
     
 }
 aside img{
@@ -125,6 +140,7 @@ aside img{
     
 }
 li{
+    font-family: var(--fonte-lagosta);
     color: rgb(2, 12, 41);
     font-size: 1.3em;
     font-style: oblique;    
