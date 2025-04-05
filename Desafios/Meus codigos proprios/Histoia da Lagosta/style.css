@@ -68,7 +68,7 @@ main p{
     font-size: 1em;
 }
 div.video{
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 50%;
@@ -95,6 +95,7 @@ article > h2{
 article > h3{
     font-family: var(--fonte-lagosta);
     color: #020752;
+    margin-bottom: 10px;
 }
 article > h4{
     font-family: var(--fonte-lagosta);
@@ -123,6 +124,9 @@ nav > a{
     border-radius: 5px;
     margin: 5px;
     text-decoration: none;      
+}
+nav a:hover{
+    color: aquamarine;
 }
 ul {    
     list-style-position: inside;
@@ -160,5 +164,22 @@ li{
     color: rgb(2, 12, 41);
     font-size: 1.3em;
     font-style: oblique;    
+}
+footer{
+    background-color: #797EC3;
+    padding: 5px;
+    font-family: var(--fonte-lagosta);
+    color: white;
+    text-align: center;
+    border-radius: 10px 0px;
+}
+footer a{    
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: aqua;
 }
  
