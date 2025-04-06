@@ -81,13 +81,20 @@ div.video > iframe{
     left: 5%;
     width: 90%;
     height: 90%;
-}   
+} 
+article img{    
+    width: 100%;    
+    padding: auto;
+    border-radius: 0px;
+    
+}
 
 article > h1{
     font-family: var(--fonte-lagosta);
     color: #020752;
     text-align: center;
 }
+
 article > h2{
     font-family: var(--fonte-lagosta);
     color: #020752;
@@ -101,13 +108,7 @@ article > h4{
     font-family: var(--fonte-lagosta);
     color: #020752;
 }
-picture > img{
-    
-    width: 100%;
-    max-height: 250px;
-    max-width: 600px;
-    border-radius: 20px;
-}
+
 nav{
     background-color: var(--cor3);
     padding-bottom: 20px;
