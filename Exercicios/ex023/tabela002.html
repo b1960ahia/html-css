@@ -9,7 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
             background-color: antiquewhite;
         }
@@ -23,6 +23,12 @@
         }
         td.num{
             text-align: right;
+        }
+        caption{
+            background-color: rgb(185, 180, 180);
+            font-weight: bolder;
+            color: black;
+            padding: 10px;
         }     
                
         
@@ -32,14 +38,14 @@
 <body>
     <h1>Anatomia de Tabelas Grandes</h1>
     <table>
-        <caption>População dos Estados da República Federativa do Brasil</caption>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+                <th scope="col" style="width: 50px;">% da População</th>
             </tr>
-            
+        
         </thead>
         <tbody>
             <tr>
@@ -180,7 +186,7 @@
         </tbody>
         <tfoot>
             <tr>                
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
                 <td class="num"><strong>100%</strong></td>
             </tr>
