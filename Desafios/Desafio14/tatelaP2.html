@@ -5,8 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Parte 2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        table{
+            width: 400px;
+            border-collapse:collapse ;
+        }
+        th, td{
+            border: 1px solid blue;
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+        }
+        
+       
+    </style>
 </head>
 <body>
-    <h1>Exercicio 14</h1> 
+    <h1>Exercicio 14</h1>     
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th>Média</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matematica</td>
+                <td>80</td>
+                <td>90</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>60</td>
+                <td>70</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>70</td>
+                <td>70</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>95</td>
+                <td>85</td>
+                <td>90</td>
+                
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">Media de Exatas</th>
+                <td>77.5</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>Historia</td>
+                <td>93</td>
+                <td>97</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>95</td>
+                <td>85</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">Media de Humanas</th>
+                <td>92.5</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
