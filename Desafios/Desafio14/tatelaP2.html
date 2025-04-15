@@ -18,11 +18,15 @@
             border: 1px solid blue;
             padding: 10px;
         }
-        thead{
+        thead th{
             background-color: gray;
-
+            text-align: center;
         }
-        
+        th {
+            text-align: left;
+                        
+        }               
+               
        
     </style>
 </head>
@@ -32,18 +36,17 @@
     <table>
         <thead>
             <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th colspan="2" scope="colgroup">Notas</th>
-                <th>Média</th>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Media</th> 
                 
             </tr>
             <tr>
-                <th></th>
-                <th></th>
+                
                 <th>Nota 1</th>
                 <th>Nota 2</th>
-                <th></th>
+                
             </tr>
         </thead>
         <tbody>
@@ -73,8 +76,9 @@
                 <td>90</td>
                 
             </tr>
+            
             <tr>
-                <th colspan="4" scope="row">Media de Exatas</th>
+                <th colspan="4">Media de Exatas</th>
                 <td>77.5</td>
             </tr>
             <tr>
