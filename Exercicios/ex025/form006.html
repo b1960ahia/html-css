@@ -7,12 +7,25 @@
 </head>
 <body>
     <h1>Formulario Teste</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on"><!--Qdo usa envio de arquivos metodo "post"-->
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor"><!--"value" escolhe um codigo de cor para a caixa-->
+        </p>
+
+            <label for="inivel">Nivel de Satisfação</label>
+            <input type="range" name="Nivel" id="inivel">
 
         <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+            <label for="ifoto">Foto de Perfil</label>
+            <input type="file" name="Foto" id="ifoto">
         </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
     </form>
 
     
