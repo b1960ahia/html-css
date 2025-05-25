@@ -9,8 +9,63 @@
     <h1>Exemplo de Formulario</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
 
-        <label for="iest">Estado</label>
-        <select name="Estado" id="iest"></select>
+       <p>
+            <label for="iest">Estado: </label>
+            <select name="Estado" id="iest">
+
+                <option value="" selected>---Escolha---
+                <optgroup label="Região Sudeste/Sul">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">Sao Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Parana</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+
+                <optgroup label="Região Centro Oeste">
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="GO">Goiás</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option value=""></option>
+                    <option value=""></option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value=""></option>
+                    <option value=""></option>
+                </optgroup>                    
+            </select>
+                
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="Dentista - DEN"></option>
+                <option value="Administrador - ADM"></option>
+                <option value="Desenhista -DES"></option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="40" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
     </form>
     
 </body>
