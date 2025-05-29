@@ -1,3 +1,10 @@
 @charset "UTF-8";
 
 /*Estilo para Tela*/
+
+header h1{
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    
+}
