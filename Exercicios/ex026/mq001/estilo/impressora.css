@@ -21,3 +21,6 @@ ul {
 article::after{
     content: 'Esse artigo foi escrito por Walter Beltrão';
 }
+article {
+    width: 100%;
+}
