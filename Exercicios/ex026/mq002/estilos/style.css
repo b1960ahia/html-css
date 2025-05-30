@@ -10,13 +10,13 @@
 html,body {
     width: 100vw;
     height: 100vh;
-    background-color: bisque;
+    background-color: rgb(20, 20, 196);
     background-size: contain; 
     background-repeat: no-repeat;   
 }
 h1 {
     color: brown;
-    text-shadow: 2px 2px 0px rgba(102, 102, 155, 0.468);
+    text-shadow: 2px 2px 0px rgba(35, 35, 227, 0.468);
     padding: 10px;
 }
     
