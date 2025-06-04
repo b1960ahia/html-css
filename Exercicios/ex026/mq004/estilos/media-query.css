@@ -1,7 +1,95 @@
 @charset "UTF-8";
 
-/* Todas as ddemais medias */
+/* Todas as demais medias */
+
+/* Typical Device Breakpoints 
+
+Pequenas telas: ate 600px
+celular: de 600px ate 768px
+tablet: de 769 ate 992px
+desktop: de 993px ate 1200px
+Grandes telas: acima de 1200px
+
+*/
 
 @media print{
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* desnecessario*/
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main h1 {
+        color: black;
+        text-shadow: none;
+
+    }
+
+    main {
+        border: 2px blue solid;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita por JBahia';
+    }
+
+    img#fhone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and ( min-width: 769px) and (max-width: 992px) {
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }   
+
+    main {
+        width: 450px;
+    }
+
+    img#fhone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
     
 }
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 550px;
+    }
+
+    img#fhone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+    
+}
+
+@media screen and ( min-Width: 1201px){
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#fhone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+    
+}
+    
