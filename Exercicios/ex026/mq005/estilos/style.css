@@ -17,12 +17,25 @@ header {
 header > h1 {
     background-color: rgb(160, 144, 144);
     text-align: center;
+    padding: 10px;    
+}
+
+span#burguer{
+    background-color: rgb(77, 71, 71);
+    display: block;
+    color: aliceblue;
+    text-align: center;
     padding: 10px;
-    
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    background-color: aliceblue;
+    color: black;
 }
 
 menu {
-    display: block;
+    display: none; /* troca para display : block para none*/
     text-align: center;
    
 }
