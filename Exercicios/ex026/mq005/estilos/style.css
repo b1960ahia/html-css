@@ -47,10 +47,13 @@ menu > ul {
 
 menu > ul > li > a {
     display: block;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     color: aliceblue;
-    border-top: solid white;
+    background-color: rgb(67, 65, 65);
+    text-align: center;
+    border-top: 1px solid white;
+      
 }
 
 menu > ul > li > a:hover {
