@@ -8,25 +8,30 @@
         div.conteiner{
             background-color: aqua;
             display: flex;
+            /*height: 100px; /*para column + usando heigth*?
+           /*flex-direction: row;
+            flex-wrap: nowrap; substitui por flex-flow*/
+            flex-flow: row wrap-reverse; /*wrap; nowrap;wrap-reverse*/
+            /*flex-flow: column wrap; /*usando column + conteiner*/
         }
 
         div.item{
             background-color: aquamarine;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            flex: auto; /*tira os epaços em bcº do bloco PAI*/
         }
     </style>
 </head>
 <body>
     <div class="conteiner">        
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Exemplo Bloco A</div>
+        <div class="item">Exemplo Bloco B</div>
+        <div class="item">Exemplo Bloco C</div>        
+        <div class="item">Exemplo Bloco D</div>
+        <div class="item">Exemplo Bloco E</div>
+        <div class="item">Exemplo Bloco F</div>
+        <div class="item">Exemplo Bloco G</div>
     </div>
 
 
