@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
     <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
         div.conteiner{
             background-color: aqua;
-            height: 300px;
+            height: 200px;
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: stretch;
         }
 
         div.item{
             background-color: aquamarine;
             border: 1px solid black;
-            text-align: center;
+            text-align: center; 
+                      
+            
             
         }
     </style>
