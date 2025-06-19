@@ -8,13 +8,16 @@
         div.conteiner{
             background-color: aqua;
             display: flex;
+            flex-flow: row nowrap;  /*se usar wrap quebra normal*/                
         }
 
         div.item{
             background-color: aquamarine;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            flex-basis: 200px; 
+            flex-shrink: 0; /*se usar shrink 1 encolhe*/          
+            flex-grow: 0; /*se usar grow 1 aumenta*/ 
         }
     </style>
 </head>
@@ -23,10 +26,8 @@
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        
+       
     </div>
 
 
