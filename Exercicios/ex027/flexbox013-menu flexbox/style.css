@@ -18,19 +18,42 @@ header{
     color: aliceblue;
     background-color: gray;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1{
     border: 1px dotted black;
+    flex: 0 0 200px;
 }
 
 header > nav{
     border: 1px dotted black;
-    margin: 5px;        
+    margin: 5px; 
+
+    display: flex;
+    justify-content: end;
+    flex-flow: row wrap;        
 }
 
 header > nav > a{
-    color: aliceblue;
+    color: black;
+    background-color: aqua;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;    
+
+}
+
+header > nav > a:hover{
+    background-color: black;
+    color: aqua;
+    transition: background-color .5s;
 }
 
 main{
