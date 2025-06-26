@@ -16,10 +16,10 @@ p, h1, h2{
     text-align: justify;
 }
 header, section.normal{
-    padding: 15px;
+    padding: 20px;
 }
 
 section.flex-content{
-    padding: 15px;
+    padding: 20px;
     background-color: rgb(138, 134, 134);
 }
