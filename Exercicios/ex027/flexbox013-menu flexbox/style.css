@@ -41,12 +41,12 @@ header > nav{
     flex-flow: row wrap;        
 }
 
-header > nav > a{
+header > nav > a{    
     color: black;
     background-color: aqua;
     padding: 5px;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     text-decoration: none;    
 
@@ -66,5 +66,6 @@ main{
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.524);    
     
 }
+
 
 

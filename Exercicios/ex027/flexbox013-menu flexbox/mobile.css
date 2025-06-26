@@ -8,6 +8,29 @@ header > h1{
     flex-basis: 50px;
 }
 
-header > nav > a{
+header > nav > a{    
     width: 90vw;
 }
+    header > nav{
+    /*border: 1px dotted black;*/
+    margin: 5px; 
+
+    display: flex;
+    justify-content: end;
+    flex-flow: row wrap;        
+}
+
+/*span#burguer{
+    background-color: rgb(77, 71, 71);
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+span#burguer:hover {
+    background-color: aliceblue;
+    color: black;
+}*/
