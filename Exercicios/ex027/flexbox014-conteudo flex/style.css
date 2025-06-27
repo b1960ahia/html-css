@@ -29,6 +29,7 @@ section.flex-content{
     background-color: rgb(138, 134, 134);
     display: flex;
     flex-flow: column nowrap;
+    width: 100vh;
 }
 article.text-media{
     display: flex;
@@ -58,7 +59,7 @@ div.media > img{
 div.media > iframe{
     display: block;
     margin: auto;    
-    width: 90%; 
+    width: 300px;  
               
 
 }
