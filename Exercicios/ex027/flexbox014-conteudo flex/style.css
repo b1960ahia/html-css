@@ -14,6 +14,7 @@ body{
 p{
     margin-bottom: 10px;
     text-align: justify; 
+    width: 98%;
 }
 h1, h2{
     margin-bottom: 20px;
@@ -22,14 +23,16 @@ h1, h2{
 }
 header, section.normal{
     padding: 20px;
+    width: 90vw;
 }
 
 section.flex-content{
-    padding: 20px;
+    padding: 10px;
+    align-content: center;
     background-color: rgb(138, 134, 134);
     display: flex;
     flex-flow: column nowrap;
-    width: 100%;
+    width: 90vw;
 }
 article.text-media{
     display: flex;
