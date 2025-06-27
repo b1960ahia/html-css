@@ -9,12 +9,15 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.5em;    
+}
+main > section{
+    
 }
 p{
     margin-bottom: 10px;
     text-align: justify; 
-    width: 98%;
+    
 }
 h1, h2{
     margin-bottom: 20px;
@@ -23,7 +26,7 @@ h1, h2{
 }
 header, section.normal{
     padding: 20px;
-    width: 90vw;
+    
 }
 
 section.flex-content{
@@ -32,7 +35,7 @@ section.flex-content{
     background-color: rgb(138, 134, 134);
     display: flex;
     flex-flow: column nowrap;
-    width: 90vw;
+
 }
 article.text-media{
     display: flex;
