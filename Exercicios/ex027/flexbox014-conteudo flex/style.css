@@ -29,7 +29,7 @@ header, section.normal{
 
 section.flex-content{
     padding: 10px;
-    align-content: center;
+    /*align-content: center;*/
     background-color: rgb(138, 134, 134);
     display: flex;
     flex-flow: column nowrap;
