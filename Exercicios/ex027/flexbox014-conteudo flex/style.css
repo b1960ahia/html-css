@@ -11,10 +11,8 @@ body{
     font-size: 1em;
     line-height: 1.5em;    
 }
-main > section{
-    
-}
-p{
+
+p {
     margin-bottom: 10px;
     text-align: justify; 
     
@@ -48,11 +46,11 @@ article.media-text{
     justify-content: space-between;
 }
 article > div.text{
-    flex: 1 1 400px;
+    flex: 1 0 400px;
     /*border: 2px dashed blue;*/  
 }
 article > div.media{
-    flex: 1 0 400px;
+    flex: 1 1 300px;
     /*border: 2px dashed red;*/
 }
 div.media > img{
@@ -64,9 +62,7 @@ div.media > img{
 }
 div.media > iframe{
     display: block;
-    margin: auto;    
-    
-    align-content: center; 
-              
+    margin: auto;
+                        
 
 }
