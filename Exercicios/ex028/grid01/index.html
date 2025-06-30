@@ -10,12 +10,15 @@
             height: 250px;
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template-rows: auto auto auto;/*auto=100px*/
+            /*grid-template: 100px 100px 100px/auto auto auto;*/
             gap: 5px;
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content: normal;
+            align-items: normal;/*normal=stretch*/
+            justify-items: normal;/*normal=center*/ 
+            /*place-items: stretch center;/*subst items*/ 
+            /*place-content: start end;/*subst content*/          
+            align-content: normal;/*normal=start*/
+            justify-content: normal;/*normal=end*/                      
         }
         div.item{
             border: 5px solid rgb(26, 102, 150);
@@ -33,6 +36,7 @@
         <div class="item">F</div>
         <div class="item">G</div>
         <div class="item">H</div>
+        
     </div>
     
 </body>
