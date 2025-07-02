@@ -8,17 +8,11 @@
         div.conteiner{
             border: 5px solid aqua;
             height: 250px;
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;/*auto=100px*/
-            /*grid-template: 100px 100px 100px/auto auto auto;*/
+            display: grid;            
+            grid-template: repeat(3, auto)/ repeat(3, auto);          
             gap: 5px;
-            align-items: normal;/*normal=stretch*/
-            justify-items: normal;/*normal=center*/ 
-            /*place-items: stretch center;/*subst items*/ 
-            /*place-content: start end;/*subst content*/          
-            align-content: normal;/*normal=start*/
-            justify-content: normal;/*normal=end*/                      
+            place-items: start center;   
+            place-content: space-between end;                     
         }
         div.item{
             border: 5px solid rgb(26, 102, 150);
