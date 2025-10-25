@@ -96,7 +96,7 @@ header {
 }
 
 header h1 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: 3rem;
   margin-bottom: 8px;
   animation: slideIn var(--duracao) var(--ease);
 }
@@ -104,7 +104,7 @@ header h1 {
 header p {
   color: aqua;
   font-weight: bold;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: 1.2rem;
   font-style: oblique;  
   max-width: 100%;
   margin: 0 auto;
@@ -189,13 +189,13 @@ nav a:hover {
 }
 
 .noticias-curiosidades h2 {
-  font-size: clamp(1.5rem, 4vw, 2em);
+  font-size: 2em;
   margin-bottom: 15px;
   color: var(--cor-destaque);
 }
 
 .noticias-curiosidades p {
-  font-size: clamp(1rem, 2.5vw, 1.2em);
+  font-size: 1.2em;
   margin-bottom: 10px;
   color: #e0e1dd;
 }
@@ -213,7 +213,7 @@ nav a:hover {
   width: min(280px, 70vw);
   padding: 12px 15px;
   border-radius: 12px;
-  border: 1px solid var(--cor-destaque);
+  border: 1.5px solid var(--cor-destaque);
   outline: none;
   font-size: 1em;
   transition: 0.3s;
@@ -225,7 +225,7 @@ nav a:hover {
   color: #bbb;
 }
 
-.pesquisa-web input[type="text"]:focus {
+.pesquisa-web input[type="text"]:focus {  
   border-color: var(--cor-secundaria);
   box-shadow: 0 0 10px var(--cor-secundaria);
 }
@@ -249,8 +249,8 @@ nav a:hover {
 }
 
 .dicas-temas p {
-  font-size: clamp(0.9rem, 2vw, 1.1em);
-  color: #ccc;
+  font-size: 1.1em;
+  color: #c0a1a1;
   margin-top: 10px;
 }
 
@@ -284,27 +284,27 @@ article h1 {
 }
 
 article h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
 article h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-left: 10px;
 }
 
 article h4 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-left: 10px;
 }
 
 p {
 
-  color: #440707;
+  color: #270202;
   margin-bottom: 20px;
   margin-left: 20px;  
   animation: fadeIn var(--duracao) var(--ease);
-  font-size: 1.3rem;
+  font-size: 1.4em;
 }
 
 body.dark-mode p {
@@ -323,7 +323,7 @@ body.dark-mode p {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -364,7 +364,7 @@ img.visivel {
       Aside (Curiosidades)
 ---------------------- */
 aside {
-  background: #e0f2f1;
+  background: #64bbb7;
   border-left: 5px solid var(--cor-secundaria);
   padding: 20px;
   margin: 20px 0;
@@ -391,11 +391,11 @@ body.dark-mode aside {
   text-align: center;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
   animation: fadeInUp var(--duracao) var(--ease);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(146, 127, 127, 0.08);
 }
 
 .lagostas-raras h3 {
-  font-size: clamp(1.3rem, 3vw, 1.6em);
+  font-size: 1.8em;
   margin-bottom: 20px;
   color: var(--cor-destaque);
   text-shadow: 0 0 10px rgba(255, 183, 3, 0.5);
@@ -404,7 +404,7 @@ body.dark-mode aside {
 .galeria-lagostas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  gap: 30px;
   justify-content: center;
 }
 
@@ -463,11 +463,12 @@ body.dark-mode aside {
       Rodapé
 ---------------------- */
 footer {
+  border-radius: 10px;
   background: var(--cor-primaria);
   color: #78c6c9;
   text-align: center;
   padding: 20px;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 1.2rem;
   font-weight: bold;
   font-style: italic;
   margin-top: 20px;
@@ -500,7 +501,7 @@ footer a:hover {
   cursor: pointer;
   display: none;
   box-shadow: var(--sombra);
-  font-size: 1.2rem;
+  font-size: 0.5rem;
   transition: all 0.3s var(--ease);
   z-index: 1000;
 }
@@ -584,7 +585,7 @@ footer a:hover {
   /* Aumentar tamanho das imagens no mobile */
   img {
     margin: 25px auto;
-    max-width: 95%;
+    max-width: 100%;
   }
   
   .galeria-lagostas {
