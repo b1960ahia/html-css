@@ -259,7 +259,7 @@ nav a:hover {
 ------------------------ */
 main {
   padding: 20px 0;
-  background-color: rgb(49, 136, 136);
+  background-color: var(--cor-fundo);
   transition: background-color 0.5s var(--ease);
 }
 
@@ -271,7 +271,7 @@ main {
 
 article h1, article h2, article h3, article h4 {
   font-style: italic;
-  color: rgb(6, 53, 6);
+  color: rgb(4, 65, 4);
   margin-top: 5px;
   margin-bottom: 10px;
   animation: fadeInUp var(--duracao) var(--ease);
@@ -461,7 +461,6 @@ body.dark-mode aside {
       Rodapé
 ---------------------- */
 footer {
-  border-radius: 20%;
   background: var(--cor-primaria);
   color: #78c6c9;
   text-align: center;
@@ -641,17 +640,11 @@ footer a:hover {
     margin-right: 10px;
   }
   
-  /* Aumentar ainda mais no mobile pequeno */
-  .video-container {
-    margin: 0 -10px;
-    width: calc(100% + 20px);
-    max-width: none;
-  }
-  
+  /* FOTOS EM LARGURA TOTAL NO MOBILE */
   img {
-    margin: 20px -10px;
-    width: calc(100% + 20px);
+    width: 100%;
     max-width: none;
+    margin: 20px 0;
     border-radius: 0;
   }
   
@@ -662,8 +655,8 @@ footer a:hover {
   
   .galeria-lagostas img {
     height: 200px;
-    max-width: 100%;
-    margin: 0 auto;
+    width: 100%;
+    border-radius: 0;
   }
   
   .tooltip .tooltiptext {
@@ -674,8 +667,6 @@ footer a:hover {
   
   .noticias-curiosidades {
     padding: 25px 15px;
-    margin: 0 -10px;
-    border-radius: 0;
   }
   
   #btnTopo {
@@ -709,11 +700,6 @@ footer a:hover {
   .galeria-lagostas img {
     height: 180px;
   }
-  
-  /* Ajuste final para telas muito pequenas */
-  .video-container::before {
-    padding-top: 60%; /* Um pouco mais alto */
-  }
 }
 
 /* Ajustes para telas muito grandes */
@@ -740,7 +726,7 @@ footer a:hover {
         </div>        
     </header>
     
-    <!-- SEÇÃO DE NOTÍCIAS MOVIDA PARA AQUI -->
+    <!-- SEÇÃO DE NOTÍCIAS ABAIXO DO CABEÇALHO -->
     <section class="noticias-curiosidades">
         <h2>Notícias e Curiosidades</h2>
         <p>Pesquise novidades e fatos curiosos sobre o mundo marítimo, a pesca da lagosta e o oceano.</p>
@@ -914,7 +900,6 @@ footer a:hover {
   const navLinks = document.querySelectorAll('nav a');
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-      // Para links âncora, permite o comportamento padrão
       if (link.getAttribute('href').startsWith('#')) {
         e.preventDefault();
         const target = document.querySelector(link.getAttribute('href'));
