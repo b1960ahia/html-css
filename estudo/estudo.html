@@ -175,209 +175,6 @@ nav a:hover {
 }
 
 /* ----------------------
-    Conteúdo Principal
------------------------- */
-main {
-  padding: 20px 0;
-  background-color: var(--cor-fundo);
-  transition: background-color 0.5s var(--ease);
-}
-
-.article-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-article h1, article h2, article h3, article h4 {
-  font-style: italic;
-  color: rgb(4, 65, 4);
-  margin-top: 5px;
-  margin-bottom: 10px;
-  animation: fadeInUp var(--duracao) var(--ease);
-}
-
-article h1 {
-  font-size: clamp(1.4rem, 3vw, 1.6rem);
-  text-align: center;
-}
-
-article h2 {
-  font-size: clamp(1.3rem, 2.8vw, 1.6rem);
-  text-align: center;
-}
-
-article h3 {
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  margin-left: 10px;
-}
-
-article h4 {
-  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
-  margin-left: 10px;
-}
-
-p {
-  color: #7a0f0f;
-  margin-bottom: 20px;
-  margin-left: 20px;  
-  animation: fadeIn var(--duracao) var(--ease);
-  font-size: clamp(1rem, 2vw, 1.5em);
-}
-
-body.dark-mode p {
-  color: #e3b4b4;
-}
-
-/* ---------------------
-      Vídeo & Imagem
----------------------- */
-.video {
-  text-align: center;
-  margin: 25px 0;
-  animation: zoomIn var(--duracao) var(--ease);
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  max-width: 560px;
-  margin: 0 auto;
-}
-
-.video-container::before {
-  content: "";
-  display: block;
-  padding-top: 56.25%; /* Proporção 16:9 */
-}
-
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: var(--radius);
-  box-shadow: var(--sombra);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: var(--radius);
-  margin: 15px auto;
-  display: block;
-  box-shadow: var(--sombra);
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s var(--ease);
-}
-
-img.visivel {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ---------------------
-      Aside (Curiosidades)
----------------------- */
-aside {
-  background: #e0f2f1;
-  border-left: 5px solid var(--cor-secundaria);
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: var(--radius);
-  box-shadow: var(--sombra);
-  animation: fadeInUp var(--duracao) var(--ease);
-  transition: background-color 0.5s var(--ease);
-}
-
-body.dark-mode aside {
-  background: #113e3d;
-  color: #a88989;
-}
-
-/* ----------------------
-  Galeria Lagostas Raras
------------------------- */
-.lagostas-raras {
-  background: linear-gradient(135deg, #0d1b2a, #001d3d);
-  color: #f1f1f1;
-  padding: 40px 20px;
-  border-radius: 20px;
-  margin-top: 40px;
-  text-align: center;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-  animation: fadeInUp var(--duracao) var(--ease);
-  border: 1px solid rgba(255,255,255,0.08);
-}
-
-.lagostas-raras h3 {
-  font-size: clamp(1.3rem, 3vw, 1.6em);
-  margin-bottom: 20px;
-  color: var(--cor-destaque);
-  text-shadow: 0 0 10px rgba(255, 183, 3, 0.5);
-}
-
-.galeria-lagostas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  justify-content: center;
-}
-
-.galeria-lagostas img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid #dacece;
-  box-shadow: 0 0 10px rgba(255,255,255,0.3);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.galeria-lagostas img:hover {
-  transform: scale(1.08) rotate(-1deg);
-  box-shadow: 0 0 25px var(--cor-destaque);
-  border-color: var(--cor-destaque);
-}
-
-/* Tooltip */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  width: 100%;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  opacity: 0;
-  width: 240px;
-  background: rgba(10, 10, 10, 0.95);
-  color: #fff;
-  text-align: center;
-  border-radius: 12px;
-  padding: 12px 14px;
-  position: absolute;
-  z-index: 10;
-  bottom: 115%;
-  left: 50%;
-  transform: translateX(-50%) translateY(5px);
-  transition: opacity 0.5s ease, transform 0.4s ease;
-  font-size: 0.9em;
-  line-height: 1.5;
-  pointer-events: none;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-  transform: translateX(-50%) translateY(-5px);
-}
-
-/* ---------------------
    Notícias e Pesquisa
 ---------------------- */
 .noticias-curiosidades {
@@ -385,8 +182,8 @@ body.dark-mode aside {
   background: linear-gradient(135deg, #001d3d, #003566);
   color: #f1f1f1;
   padding: 30px 20px;
-  border-radius: 20px;
-  margin: 20px 0;
+  border-radius: 0 0 20px 20px;
+  margin: 0;
   box-shadow: 0 0 25px rgba(0,0,0,0.6);
   animation: fadeInUp var(--duracao) var(--ease);
 }
@@ -455,6 +252,209 @@ body.dark-mode aside {
   font-size: clamp(0.9rem, 2vw, 1.1em);
   color: #ccc;
   margin-top: 10px;
+}
+
+/* ----------------------
+    Conteúdo Principal
+------------------------ */
+main {
+  padding: 20px 0;
+  background-color: var(--cor-fundo);
+  transition: background-color 0.5s var(--ease);
+}
+
+.article-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+article h1, article h2, article h3, article h4 {
+  font-style: italic;
+  color: rgb(4, 65, 4);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  animation: fadeInUp var(--duracao) var(--ease);
+}
+
+article h1 {
+  font-size: clamp(1.4rem, 3vw, 1.6rem);
+  text-align: center;
+}
+
+article h2 {
+  font-size: clamp(1.3rem, 2.8vw, 1.6rem);
+  text-align: center;
+}
+
+article h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  margin-left: 10px;
+}
+
+article h4 {
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  margin-left: 10px;
+}
+
+p {
+  color: #7a0f0f;
+  margin-bottom: 20px;
+  margin-left: 20px;  
+  animation: fadeIn var(--duracao) var(--ease);
+  font-size: clamp(1rem, 2vw, 1.5em);
+}
+
+body.dark-mode p {
+  color: #e3b4b4;
+}
+
+/* ---------------------
+      Vídeo & Imagem
+---------------------- */
+.video {
+  text-align: center;
+  margin: 25px 0;
+  animation: zoomIn var(--duracao) var(--ease);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-container::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* Proporção 16:9 */
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin: 20px auto;
+  display: block;
+  box-shadow: var(--sombra);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s var(--ease);
+}
+
+img.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------------------
+      Aside (Curiosidades)
+---------------------- */
+aside {
+  background: #e0f2f1;
+  border-left: 5px solid var(--cor-secundaria);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+  animation: fadeInUp var(--duracao) var(--ease);
+  transition: background-color 0.5s var(--ease);
+}
+
+body.dark-mode aside {
+  background: #113e3d;
+  color: #a88989;
+}
+
+/* ----------------------
+  Galeria Lagostas Raras
+------------------------ */
+.lagostas-raras {
+  background: linear-gradient(135deg, #0d1b2a, #001d3d);
+  color: #f1f1f1;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp var(--duracao) var(--ease);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.lagostas-raras h3 {
+  font-size: clamp(1.3rem, 3vw, 1.6em);
+  margin-bottom: 20px;
+  color: var(--cor-destaque);
+  text-shadow: 0 0 10px rgba(255, 183, 3, 0.5);
+}
+
+.galeria-lagostas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.galeria-lagostas img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #dacece;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.galeria-lagostas img:hover {
+  transform: scale(1.08) rotate(-1deg);
+  box-shadow: 0 0 25px var(--cor-destaque);
+  border-color: var(--cor-destaque);
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  width: 240px;
+  background: rgba(10, 10, 10, 0.95);
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  padding: 12px 14px;
+  position: absolute;
+  z-index: 10;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  transition: opacity 0.5s ease, transform 0.4s ease;
+  font-size: 0.9em;
+  line-height: 1.5;
+  pointer-events: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
 }
 
 /* ---------------------
@@ -530,8 +530,12 @@ footer a:hover {
   }
   
   .galeria-lagostas {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+  }
+  
+  .galeria-lagostas img {
+    height: 200px;
   }
 }
 
@@ -570,18 +574,29 @@ footer a:hover {
     text-align: center;
   }
   
+  /* Aumentar tamanho do vídeo no mobile */
+  .video-container {
+    max-width: 100%;
+  }
+  
+  /* Aumentar tamanho das imagens no mobile */
+  img {
+    margin: 25px auto;
+    max-width: 95%;
+  }
+  
   .galeria-lagostas {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   }
   
   .galeria-lagostas img {
-    height: 140px;
+    height: 180px;
   }
   
   .tooltip .tooltiptext {
-    width: 200px;
-    font-size: 0.8em;
+    width: 220px;
+    font-size: 0.85em;
   }
   
   .pesquisa-web {
@@ -591,7 +606,7 @@ footer a:hover {
   
   .pesquisa-web input[type="text"] {
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 
@@ -625,26 +640,41 @@ footer a:hover {
     margin-right: 10px;
   }
   
+  /* Aumentar ainda mais no mobile pequeno */
+  .video-container {
+    margin: 0 -10px;
+    width: calc(100% + 20px);
+    max-width: none;
+  }
+  
+  img {
+    margin: 20px -10px;
+    width: calc(100% + 20px);
+    max-width: none;
+    border-radius: 0;
+  }
+  
   .galeria-lagostas {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 20px;
   }
   
   .galeria-lagostas img {
-    height: 160px;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 200px;
+    max-width: 100%;
+    margin: 0 auto;
   }
   
   .tooltip .tooltiptext {
-    width: 180px;
-    font-size: 0.75em;
+    width: 200px;
+    font-size: 0.8em;
     padding: 10px 12px;
   }
   
   .noticias-curiosidades {
-    padding: 20px 15px;
+    padding: 25px 15px;
+    margin: 0 -10px;
+    border-radius: 0;
   }
   
   #btnTopo {
@@ -676,7 +706,12 @@ footer a:hover {
   }
   
   .galeria-lagostas img {
-    height: 140px;
+    height: 180px;
+  }
+  
+  /* Ajuste final para telas muito pequenas */
+  .video-container::before {
+    padding-top: 60%; /* Um pouco mais alto */
   }
 }
 
@@ -684,6 +719,10 @@ footer a:hover {
 @media (min-width: 1440px) {
   .container, .article-container, .nav-container, .header-content {
     max-width: 1400px;
+  }
+  
+  .video-container {
+    max-width: 900px;
   }
 }
   
@@ -699,6 +738,22 @@ footer a:hover {
             <p>Conheça todas as etapas, curiosidades e riscos, da pesca da Lagosta, em um único lugar</p>
         </div>        
     </header>
+    
+    <!-- SEÇÃO DE NOTÍCIAS MOVIDA PARA AQUI -->
+    <section class="noticias-curiosidades">
+        <h2>Notícias e Curiosidades</h2>
+        <p>Pesquise novidades e fatos curiosos sobre o mundo marítimo, a pesca da lagosta e o oceano.</p>
+
+        <form class="pesquisa-web" action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="Pesquisar na web..." required>
+            <input type="hidden" name="as_sitesearch" value="">
+            <button type="submit">🔍 Pesquisar</button>
+        </form>
+
+        <div class="dicas-temas">
+            <p>Exemplos: <em>"lagosta azul", "pesca artesanal no Brasil", "mudanças climáticas e oceanos"</em></p>
+        </div>
+    </section>
     
     <nav>
         <div class="nav-container">
@@ -729,21 +784,6 @@ footer a:hover {
                 <p>Lagostas têm uma garra maior e mais forte (para esmagar) e outra menor e afiada (para cortar). Curiosamente, se perderem uma, podem desenvolver uma nova com a função oposta! Elas nadam para trás quando precisam fugir rapidamente, dobrando a cauda sob o corpo. Mas normalmente andam para frente no fundo do mar. Em cativeiro, podem se tornar canibais, mas na natureza isso é raro. Normalmente se alimentam de peixes, moluscos e outros invertebrados.</p> 
                 
                 <p>Lagostas não sobrevivem em água doce ou gelada. Se expostas a temperaturas muito baixas, entram em choque e morrem. O coração da lagosta fica atrás da cabeça! E se parar, um simples estímulo (como um choque) pode fazê-lo voltar a bater. Elas podem regenerar patas, garras e até olhos perdidos, mas demora várias mudas para ficarem como novas. No século XIX, lagostas eram consideradas "comida de prisioneiros e pobres" nos EUA. Só no século XX virou um prato sofisticado.</p>
-                
-                <section class="noticias-curiosidades">
-                    <h2>Notícias e Curiosidades</h2>
-                    <p>Pesquise novidades e fatos curiosos sobre o mundo marítimo, a pesca da lagosta e o oceano.</p>
-
-                    <form class="pesquisa-web" action="https://www.google.com/search" method="get" target="_blank">
-                        <input type="text" name="q" placeholder="Pesquisar na web..." required>
-                        <input type="hidden" name="as_sitesearch" value="">
-                        <button type="submit">🔍 Pesquisar</button>
-                    </form>
-
-                    <div class="dicas-temas">
-                        <p>Exemplos: <em>"lagosta azul", "pesca artesanal no Brasil", "mudanças climáticas e oceanos"</em></p>
-                    </div>
-                </section>
                         
                 <aside class="lagostas-raras">
                     <h3>Lagostas com cores raras devido a mutações genéticas</h3>
