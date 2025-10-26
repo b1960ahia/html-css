@@ -48,8 +48,8 @@
     /* HEADER */
     header{
       background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('img/background-header.jpg') center/cover no-repeat;
-      color: #fff;
-      padding: 48px 20px 28px;
+      color: white;
+      padding: 20px 20px 28px;
       text-align:center;
       position:relative;
       border-bottom-left-radius:12px;
@@ -57,21 +57,21 @@
     }
     .header-content{position:relative;z-index:1;max-width:1100px;margin:0 auto}
     #toggleTema{
-      position:absolute;right:18px;top:18px;background:rgba(255,255,255,0.12);
-      border:none;width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:18px;color:#fff;
+      position:absolute;right:18px;top:18px;background:rgba(146, 108, 108, 0.12);
+      border:none;width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:18px;color:#753030;
       display:flex;align-items:center;justify-content:center;
     }
-    header h1{font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:8px}
-    header p{font-size:1.05rem;opacity:0.95}
+    header h1{font-size:2.6rem;margin-bottom:8px}
+    header p{font-size:1.5em;opacity:0.95}
 
     /* NOTÍCIAS / PESQUISA */
     .noticias-curiosidades{
       max-width:1100px;margin:-12px auto 12px;padding:22px;background:linear-gradient(135deg,#001d3d,#04121f);
-      color:#eef6ff;border-radius:12px;box-shadow:0 10px 30px rgba(2,12,41,0.35);
+      color:#8a9cb1;border-radius:12px;box-shadow:0 10px 30px rgba(2,12,41,0.35);
       display:flex;flex-direction:column;gap:12px;align-items:center;
     }
-    .noticias-curiosidades h2{color:var(--destaque);font-size:clamp(1.25rem,3vw,1.8rem)}
-    .noticias-curiosidades p{color:#dfe9f5;margin-bottom:6px}
+    .noticias-curiosidades h2{color:var(--destaque);font-size:2em}
+    .noticias-curiosidades p{color:#dfe9f5;margin-bottom:6px; font-size: 1.5em;}
     .pesquisa-web{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;width:100%}
     .pesquisa-web input[type="text"]{
       width:min(420px,72%);padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,0.15);
@@ -82,20 +82,21 @@
       padding:10px 16px;border-radius:12px;border:2px solid var(--destaque);
       background:#021029;color:#bfe9ff;font-weight:700;cursor:pointer;
     }
+    
     .dicas-temas{font-size:0.95rem;color:#cfe6ff;opacity:0.95}
 
     /* NAV */
     nav{background:var(--cor3);padding:12px 10px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
     .nav-container{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
-    nav a{background:#2d3f90;color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:1rem;transition:transform var(--dur)}
+    nav a{background:#2d3f90;color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:1.1rem;transition:transform var(--dur)}
     nav a:hover{transform:translateY(-3px);background:var(--cor2);color:aquamarine}
 
     /* MAIN */
     main{max-width:900px;margin:20px auto;padding:12px}
     article{background:var(--cor1);padding:22px;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,0.08)}
-    article h1{font-size:1.6rem;color:var(--cor3);text-align:center;margin-bottom:14px}
-    article h2,h3,h4{color:var(--cor3);margin-top:18px;margin-bottom:8px}
-    article p{margin-bottom:12px;text-align:justify;line-height:1.5;font-size:1rem}
+    article h1{font-size:2rem;color:var(--cor3);text-align:center;margin-bottom:14px}
+    article h2{font-size: 1.8em;} article h3{font-size: 1.6em;} article h4{font-size: 1.5em}
+    article p{margin-bottom:12px;text-align:justify;line-height:1.5;font-size:1.5em}
 
     /* VIDEO */
     .video{background:var(--cor2);margin:-12px -22px 18px -22px;padding:12px;border-radius:8px;position:relative;overflow:hidden}
@@ -108,10 +109,10 @@
     /* GALERIA / ASIDE */
     aside{margin:18px 0;background:var(--cor2);padding:10px;border-radius:10px;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
     aside h3{background:var(--sec);padding:10px;border-radius:8px;margin:-10px -10px 14px -10px}
-    .galeria-lagostas{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+    .galeria-lagostas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
     .tooltip{position:relative;overflow:hidden;border-radius:8px}
-    .tooltip img{height:150px;object-fit:cover;width:100%}
-    .tooltiptext{position:absolute;left:0;bottom:0;width:100%;background:rgba(0,0,0,0.7);color:#fff;padding:8px;font-size:0.9rem;opacity:0;transform:translateY(8px);transition:all 0.2s ease}
+    .tooltip img{height:150px;object-fit:cover;width:100%; height: 80%;}
+    .tooltiptext{position:absolute;left:0;bottom:0;width:100%;background:rgba(17, 2, 2, 0.7);color:#fff;padding:8px;font-size:1rem;opacity:0;transform:translateY(8px);transition:all 0.2s ease}
     .tooltip:hover .tooltiptext{opacity:1;transform:translateY(0)}
 
     ul{list-style:inside;columns:2;gap:8px;margin-left:8px}
@@ -199,7 +200,7 @@
           </div>
 
           <div class="tooltip">
-            <img src="img/lagosta bicolor.jpeg" alt="Lagosta Bicolor" onerror="imgFallback(this)" loading="lazy">
+            <img src="img/bicolor.jpeg" alt="Lagosta Bicolor" onerror="imgFallback(this)" loading="lazy">
             <div class="tooltiptext">💙🧡 <strong>Lagosta Bicolor</strong><br>Exibe duas cores distintas — raridade: ~1 em 50 milhões.</div>
           </div>
 
