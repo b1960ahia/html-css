@@ -74,33 +74,38 @@ body{
     transform: translateY(-3px);
 }
 
-/* HEADER COM ESPAÇAMENTO MELHORADO */
+/* HEADER COM ALTURA AUMENTADA */
 header{
     font-family: var(--fonte-lagosta);
-    background-size: 130px;    
+    background-size: 250px;    
     background-position: center;
     background-repeat: repeat-x;     
     background-image: url(lagosta\ azul.jpeg);    
     background-color: var(--cor3);
     color: white;
-    padding: 50px 40px 25px; /* Aumentei o padding-top e ajustei o bottom */
+    padding: 40px 40px 35px; /* Aumentei ainda mais o padding-top e bottom */
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius:10px;    
     position: relative;
     transition: all var(--duracao) var(--ease);
-    margin-bottom: 0; /* Remove qualquer margem inferior */
+    margin-bottom: 0;
+    min-height: 220px; /* Adicionei uma altura mínima */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-content {
     position: relative;
-    padding: 10px 0; /* Adicionei padding interno para melhor espaçamento */
+    padding: 20px 0; /* Aumentei o padding interno */
+    width: 100%;
 }
 
 #toggleTema {
     position: absolute;
-    top: 15px; /* Ajustei a posição para ficar melhor espaçado */
-    right: 15px;
+    top: 20px; /* Ajustei para acompanhar o aumento do header */
+    right: 20px;
     background: rgba(255,255,255,0.2);
     border: none;
     border-radius: 50%;
@@ -119,14 +124,14 @@ header{
 
 header > h1{    
     font-family: var(--fonte-lagosta);
-    font-size: 2em;   
-    margin: 15px 0 10px; /* Ajustei as margens para melhor espaçamento */
+    font-size: 2.4em;   /* Aumentei ligeiramente o tamanho da fonte */
+    margin: 20px 0 15px; /* Aumentei as margens */
     padding: 0 10px;
 }
 header > p{
-    font-size: 1.3em;
+    font-size: 1.4em; /* Aumentei ligeiramente o tamanho da fonte */
     font-weight: bolder;
-    margin: 10px 0;
+    margin: 15px 0;
     padding: 0 10px;
 }
 
@@ -137,7 +142,7 @@ header > p{
   text-align: center;
   background: linear-gradient(135deg, #001d3d, #04121f);
   color: #f1f1f1;
-  padding: 35px 20px; /* Aumentei o padding vertical */
+  padding: 35px 20px;
   border-radius: 0 0 20px 20px;
   margin: 0;
   box-shadow: 0 0 25px rgba(0,0,0,0.6);
@@ -157,14 +162,14 @@ header > p{
 
 .noticias-curiosidades h2 {
   font-size: clamp(1.5rem, 4vw, 2em);
-  margin-bottom: 20px; /* Aumentei a margem inferior */
+  margin-bottom: 20px;
   color: var(--cor-destaque);
   padding: 0 10px;
 }
 
 .noticias-curiosidades p {
   font-size: clamp(1rem, 2.5vw, 1.2em);
-  margin-bottom: 15px; /* Aumentei a margem inferior */
+  margin-bottom: 15px;
   color: #e0e1dd;
   padding: 0 10px;
 }
@@ -175,7 +180,7 @@ header > p{
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 20px; /* Aumentei a margem inferior */
+  margin-bottom: 20px;
   padding: 0 10px;
 }
 
@@ -220,7 +225,7 @@ header > p{
 }
 
 .dicas-temas {
-  margin-top: 20px; /* Aumentei a margem superior */
+  margin-top: 20px;
   padding: 0 10px;
 }
 
@@ -229,13 +234,13 @@ header > p{
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-top: 15px; /* Aumentei a margem superior */
+  margin-top: 15px;
   padding: 0 10px;
 }
 
 .sugestao {
   background: rgba(255,255,255,0.1);
-  padding: 8px 15px; /* Aumentei o padding */
+  padding: 8px 15px;
   border-radius: 15px;
   font-size: 0.9em;
   cursor: pointer;
@@ -251,13 +256,13 @@ header > p{
 .dicas-temas p {
   font-size: clamp(0.9rem, 2vw, 1.1em);
   color: #ccc;
-  margin-top: 15px; /* Aumentei a margem superior */
+  margin-top: 15px;
 }
 
 /* Navegação com melhor espaçamento */
 nav{
     background-color: var(--cor3);
-    padding: 20px 10px; /* Aumentei o padding vertical */
+    padding: 20px 10px;
     max-width: 100%;   
     transition: all var(--duracao) var(--ease);
     position: relative;
@@ -267,14 +272,14 @@ nav{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px; /* Aumentei o gap entre os links */
+    gap: 12px;
 }
 
 nav > a{
     font-family: var(--fonte-lagosta);
     background-color: #414aad;
     color: white;
-    padding: 10px 18px; /* Aumentei o padding */
+    padding: 10px 18px;
     border-radius: 5px;
     text-decoration: none;  
     transition: all 0.3s ease;
@@ -291,12 +296,12 @@ nav a:hover{
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 32px; /* Aumentei ligeiramente o tamanho */
-    height: 24px; /* Aumentei ligeiramente o tamanho */
+    width: 32px;
+    height: 24px;
     cursor: pointer;
     position: absolute;
-    top: 18px; /* Ajustei a posição vertical */
-    right: 18px; /* Ajustei a posição horizontal */
+    top: 18px;
+    right: 18px;
     z-index: 100;
     padding: 2px;
 }
@@ -328,7 +333,7 @@ main{
     margin: auto;
     max-width: 800px;
     min-width: 270px;
-    padding: 25px; /* Aumentei o padding */
+    padding: 25px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
     margin-bottom: 5px;
     border-bottom-left-radius: 10px;
@@ -336,7 +341,7 @@ main{
     transition: all var(--duracao) var(--ease);
 }
 main p{
-    margin: 18px 0px; /* Aumentei a margem vertical */
+    margin: 18px 0px;
     text-align: justify;
     text-indent: 30px;
     line-height: 1.5em;
@@ -346,7 +351,7 @@ main p{
 /* Seção de vídeo - CORRIGIDA */
 .video-container {
     background-color: var(--cor2);
-    margin: 0px -25px 30px -25px; /* Ajustei as margens negativas */
+    margin: 0px -25px 30px -25px;
     padding: 20px;
     padding-bottom: 56.25%; /* Proporção 16:9 */
     position: relative;
@@ -365,7 +370,7 @@ main p{
 /* Imagens do artigo */
 article img{    
     width: 100%;    
-    padding: 12px 0; /* Aumentei o padding vertical */
+    padding: 12px 0;
     border-radius: 10px;
     transition: transform 0.3s ease, opacity 0.5s ease;
     opacity: 0;
@@ -385,7 +390,7 @@ article > h1{
     font-family: var(--fonte-lagosta);
     color: #020752;
     text-align: center;
-    margin-bottom: 25px; /* Aumentei a margem inferior */
+    margin-bottom: 25px;
     font-size: 2.2em;
     padding: 0 10px;
 }
@@ -393,22 +398,22 @@ article > h1{
 article > h2{
     font-family: var(--fonte-lagosta);
     color: #020752;
-    margin: 30px 0 18px; /* Aumentei as margens */
+    margin: 30px 0 18px;
     border-bottom: 2px solid var(--cor2);
-    padding-bottom: 8px; /* Aumentei o padding inferior */
+    padding-bottom: 8px;
 }
 
 article > h3{
     font-family: var(--fonte-lagosta);
     color: #020752;
-    margin: 25px 0 12px; /* Aumentei as margens */
+    margin: 25px 0 12px;
     font-size: 1.5em;
 }
 
 article > h4{
     font-family: var(--fonte-lagosta);
     color: #020752;
-    margin: 18px 0 8px; /* Aumentei as margens */
+    margin: 18px 0 8px;
 }
 
 /* Listas */
@@ -428,9 +433,9 @@ ul {
 /* Aside - Galeria de lagostas raras com melhor espaçamento */
 aside{
     font-family: var(--fonte-lagosta);
-    margin: 35px 0; /* Aumentei a margem vertical */
+    margin: 35px 0;
     background-color: var(--cor2);
-    padding: 15px; /* Aumentei o padding */
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.288);
     transition: all var(--duracao) var(--ease);
@@ -439,8 +444,8 @@ aside > h3{
     font-family: var(--fonte-lagosta);
     background-color: var(--cor5);
     color: white;
-    padding: 15px; /* Aumentei o padding */
-    margin: -15px -15px 20px -15px; /* Ajustei as margens negativas */
+    padding: 15px;
+    margin: -15px -15px 20px -15px;
     border-radius: 10px 10px 0px 0px;
     font-size: 1.5em;
     text-align: center;
@@ -449,8 +454,8 @@ aside > h3{
 .galeria-lagostas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 18px; /* Aumentei o gap */
-    margin-top: 18px; /* Aumentei a margem superior */
+    gap: 18px;
+    margin-top: 18px;
 }
 
 .tooltip {
@@ -485,7 +490,7 @@ aside > h3{
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 12px; /* Aumentei o padding */
+    padding: 12px;
     position: absolute;
     z-index: 1;
     bottom: 0;
@@ -506,7 +511,7 @@ aside > h3{
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
-    margin-top: 18px; /* Aumentei a margem superior */
+    margin-top: 18px;
 }
 
 .carrossel {
@@ -533,12 +538,12 @@ aside > h3{
     right: 0;
     background: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 18px; /* Aumentei o padding */
+    padding: 18px;
     border-radius: 0 0 10px 10px;
 }
 
 .carrossel-info h4 {
-    margin-bottom: 8px; /* Aumentei a margem inferior */
+    margin-bottom: 8px;
     color: var(--cor-destaque);
 }
 
@@ -549,14 +554,14 @@ aside > h3{
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
-    padding: 0 15px; /* Aumentei o padding horizontal */
+    padding: 0 15px;
 }
 
 .carrossel-botao {
     background: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
-    width: 42px; /* Aumentei ligeiramente o tamanho */
+    width: 42px;
     height: 42px;
     border-radius: 50%;
     cursor: pointer;
@@ -571,12 +576,12 @@ aside > h3{
 .carrossel-pontos {
     display: flex;
     justify-content: center;
-    gap: 12px; /* Aumentei o gap */
-    margin-top: 18px; /* Aumentei a margem superior */
+    gap: 12px;
+    margin-top: 18px;
 }
 
 .ponto {
-    width: 12px; /* Aumentei ligeiramente o tamanho */
+    width: 12px;
     height: 12px;
     border-radius: 50%;
     background: #ccc;
@@ -592,18 +597,18 @@ li{
     font-family: var(--fonte-lagosta);
     color: rgb(2, 12, 41);
     font-size: 1.1em;
-    margin-bottom: 8px; /* Aumentei a margem inferior */
+    margin-bottom: 8px;
 }
 
 /* Rodapé com melhor espaçamento */
 footer{
     background-color: #797EC3;
-    padding: 20px; /* Aumentei o padding */
+    padding: 20px;
     font-family: var(--fonte-lagosta);
     color: white;
     text-align: center;
     border-radius: 10px;
-    margin-top: 25px; /* Aumentei a margem superior */
+    margin-top: 25px;
     transition: all var(--duracao) var(--ease);
 }
 footer a{    
@@ -620,21 +625,22 @@ footer a:hover{
 /* Responsividade */
 @media (max-width: 768px) {
     header {
-        padding: 40px 15px 20px; /* Ajustei o padding para mobile */
+        padding: 50px 15px 25px; /* Ajustei o padding para mobile */
+        min-height: 180px; /* Reduzi ligeiramente a altura mínima para mobile */
     }
     
     header > h1 {
-        font-size: 1.7em;
-        margin: 12px 0 8px;
+        font-size: 1.8em;
+        margin: 15px 0 10px;
     }
     
     header > p {
-        font-size: 1.1em;
-        margin: 8px 0;
+        font-size: 1.2em;
+        margin: 10px 0;
     }
     
     .noticias-curiosidades {
-        padding: 30px 15px; /* Ajustei o padding para mobile */
+        padding: 30px 15px;
     }
     
     /* Menu hambúrguer para telas pequenas */
@@ -654,18 +660,18 @@ footer a:hover{
     
     .nav-container.active {
         max-height: 500px;
-        padding: 10px; /* Adicionei padding quando ativo */
+        padding: 10px;
     }
     
     nav a {
         width: 100%;
         text-align: center;
-        margin: 8px 0; /* Aumentei a margem entre links */
-        padding: 12px 15px; /* Aumentei o padding para mobile */
+        margin: 8px 0;
+        padding: 12px 15px;
     }
     
     main {
-        padding: 20px 15px; /* Ajustei o padding para mobile */
+        padding: 20px 15px;
         margin: 0 10px 10px;
     }
     
@@ -684,12 +690,17 @@ footer a:hover{
 }
 
 @media (max-width: 480px) {
+    header {
+        padding: 40px 15px 20px;
+        min-height: 160px;
+    }
+    
     header > h1 {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     
     header > p {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     
     .pesquisa-web {
